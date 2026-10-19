@@ -75,7 +75,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           Row(
                             children: [
                               Text(
-                                'Alex Johnson',
+                                'Ganesh',
                                 style: theme.textTheme.titleMedium?.copyWith(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w800,
@@ -101,7 +101,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           ),
                           const SizedBox(height: 2),
                           Text(
-                            'alex.johnson@example.com',
+                            'ganesh@gmail.com',
                             style: theme.textTheme.bodyMedium?.copyWith(fontSize: 12),
                           ),
                           const SizedBox(height: 6),
