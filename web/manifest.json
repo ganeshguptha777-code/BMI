@@ -1,0 +1,18 @@
+{
+  "name": "HealthMate — BMI & Health Calculator",
+  "short_name": "HealthMate",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#10B981",
+  "description": "Your personal health companion. Calculate BMI, daily water goal, calorie needs, and ideal weight with modern health tips.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

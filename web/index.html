@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="HealthMate — Modern BMI & Health Calculator. Calculate BMI, water intake, calorie needs, and ideal weight with interactive health metrics.">
+
+  <!-- Mobile & iOS meta tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="HealthMate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>HealthMate — BMI & Health Calculator</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      inset: 0;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      position: fixed;
+      background: linear-gradient(135deg, #F0FDF4 0%, #EFF6FF 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    #loading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      text-align: center;
+      padding: 24px;
+    }
+    .logo-container {
+      width: 80px;
+      height: 80px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #10B981 0%, #2563EB 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 28px rgba(16, 185, 129, 0.25);
+      margin-bottom: 24px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .logo-container svg {
+      width: 44px;
+      height: 44px;
+      stroke: #FFFFFF;
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3.5px solid #E2E8F0;
+      border-top: 3.5px solid #10B981;
+      border-right: 3.5px solid #2563EB;
+      border-radius: 50%;
+      animation: spin 0.9s cubic-bezier(0.55, 0.15, 0.45, 0.85) infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .brand-title {
+      font-size: 26px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #059669 0%, #1D4ED8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .brand-subtitle {
+      font-size: 14px;
+      color: #64748B;
+      font-weight: 500;
+      max-width: 280px;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading-container">
+    <div class="logo-container">
+      <svg viewBox="0 0 24 24">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+        <path d="M3.5 12h4l2-4 3 8 2-4h6" />
+      </svg>
+    </div>
+    <div class="spinner"></div>
+    <div class="brand-title">HealthMate</div>
+    <div class="brand-subtitle">Your personal health companion</div>
+  </div>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
