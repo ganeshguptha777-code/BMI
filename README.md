@@ -103,6 +103,7 @@ The repository includes a modern GitHub Actions workflow:
   7. Deploys directly to GitHub Pages via `actions/deploy-pages@v4`.
 
 ---
+live link:https://ganeshguptha777-code.github.io/BMI/
 
 ## 🩺 Health & Wellness Disclaimer
 
