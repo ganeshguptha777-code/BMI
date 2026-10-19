@@ -76,24 +76,6 @@ git push -u origin main
 
 ---
 
-### Option B: 100% Browser-Based Upload (No Terminal or Git Needed)
-
-If you prefer using only your web browser:
-
-1. Open your repository in your browser: [https://github.com/ganeshguptha777-code/BMI](https://github.com/ganeshguptha777-code/BMI)
-2. If the repository is empty, click **"uploading an existing file"** or the **"Add file" > "Upload files"** button.
-3. Drag and drop all the project files and folders:
-   - `lib/` (all Dart source files)
-   - `web/` (`index.html`, `manifest.json`, `favicon.svg`)
-   - `.github/workflows/deploy.yml`
-   - `pubspec.yaml`
-   - `analysis_options.yaml`
-   - `.gitignore`
-   - `README.md`
-4. Type a commit message (e.g. `Initial commit: HealthMate Flutter Web`) and click **Commit changes**.
-
----
-
 ## 🔧 One-Time GitHub Pages Setup
 
 To allow GitHub Actions to publish your site:
