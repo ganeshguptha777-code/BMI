@@ -85,7 +85,7 @@ class AppTheme {
         color: textPrimary,
       ),
     ),
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       color: surfaceLight,
       elevation: 0,
       margin: EdgeInsets.zero,
@@ -170,7 +170,7 @@ class AppTheme {
     ),
     scaffoldBackgroundColor: const Color(0xFF0F172A),
     fontFamily: GoogleFonts.plusJakartaSans().fontFamily,
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       color: const Color(0xFF1E293B),
       elevation: 0,
       margin: EdgeInsets.zero,

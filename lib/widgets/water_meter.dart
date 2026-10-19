@@ -40,8 +40,8 @@ class WaterMeter extends StatelessWidget {
             children: [
               Container(
                 padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFE0F2FE),
+                decoration: const BoxDecoration(
+                  color: Color(0xFFE0F2FE),
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(
