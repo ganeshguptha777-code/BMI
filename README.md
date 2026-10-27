@@ -38,6 +38,48 @@
 
 ---
 
+## 📂 Project Structure
+
+```text
+BMI/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml              # Cloud CI/CD: Flutter setup, analyze, build & Pages deploy
+├── .gitignore                      # Flutter & Web build artifacts ignore rules
+├── analysis_options.yaml           # Lint and code quality configuration
+├── pubspec.yaml                    # Flutter Web & Google Fonts configuration
+├── README.md                       # Comprehensive documentation & deployment guide
+├── web/
+│   ├── favicon.svg                 # SVG heart pulse emblem in emerald green & royal blue
+│   ├── index.html                  # Responsive HTML5 container with dynamic base-href
+│   └── manifest.json               # Web App Manifest for PWA support
+└── lib/
+    ├── main.dart                   # Application entry point with dynamic ThemeMode toggle
+    ├── theme/
+    │   └── app_theme.dart          # Material 3 theme, palettes, typography & CardThemeData
+    ├── models/
+    │   └── health_models.dart      # BMI categories, clinical formulas, and evidence-based tips
+    ├── widgets/
+    │   ├── custom_card.dart        # Reusable card with rounded corners & elevation
+    │   ├── bmi_scale_bar.dart      # 4-segment visual BMI scale with animated pointer
+    │   ├── unit_toggle.dart        # Segmented pill toggle for metric/imperial units
+    │   ├── water_meter.dart        # Circular hydration progress indicator
+    │   └── disclaimer_card.dart    # Non-medical educational guidance notice
+    └── screens/
+        ├── main_navigation_shell.dart   # Responsive shell with bottom navigation bar
+        ├── home_dashboard_screen.dart   # Dashboard with hero card, quick tools & daily tips
+        ├── bmi_calculator_screen.dart   # Interactive BMI inputs (gender, age, cm/ft, kg/lb)
+        ├── bmi_result_screen.dart       # BMI score, category badge, visual gauge & advice
+        ├── calculators_hub_screen.dart  # Unified tab view for all 4 health calculators
+        ├── water_calculator_screen.dart # Daily water goal calculator & interactive glass logger
+        ├── calorie_calculator_screen.dart # Mifflin-St Jeor BMR, TDEE & macro breakdown
+        ├── ideal_weight_screen.dart     # Devine, Robinson & WHO BMI range comparisons
+        ├── health_tips_screen.dart      # Filterable cards (Hydration, Nutrition, Sleep, etc.)
+        └── profile_screen.dart          # User info, stats, units & dark/light mode toggle
+```
+
+---
+
 ## 🚀 Live Demo & Deployment URL
 
 Once GitHub Actions finishes building, your web application will be live at:
